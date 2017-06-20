@@ -1,0 +1,47 @@
+Logical building and effective problem solving:
+
+1. Given a list of indian citizens with id,name,gender,age,qualification,city,state,country,salary,employeement status,marital status.
+
+1. total male and female?
+ANS: 
+1. start
+2. take total number of indian citizens
+3. check the gender
+4. if gender is male , count it to male
+5. if gender is not male , count it to female
+6. go to next citizen
+7. close
+8. end
+
+2. total graduates?
+ANS:
+1. start
+2. take total number of indian citizens
+3. check the graduate
+4. if the graduate is UG or PG ,count it to graduate
+5. if graduate is 12th or 10th ,do not count it to graduate
+6. go to next citizen 
+7. close
+8. end
+
+3.income greater than 1lakhs?
+ANS:
+1. start
+2. take total number of citizens
+3. check the salary
+4. if the salary is greater than 1lakhs, count it greater income
+5. if the salary is not greater than 1lakhs, do not count it to greater income
+6. go to next citizen
+7. close
+8. end
+
+4.married or single or widow?
+ANS:
+1. start
+2. check the marital status
+3. if the marital status is single, count it to single
+4.if the marital status is married, count it to married
+5. if the marital status is widow, count it to widow
+6. go to next citizen.
+7. close 
+8. end
