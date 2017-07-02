@@ -1,0 +1,23 @@
+1.reverse a string
+
+import java.util.Scanner;
+public class Reverse1 
+{ 
+    public static void main(String args[])
+    {  
+        int r,sum=0;    
+        int n;  
+        System.out.println("\n enter  a number:");
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+      
+        while(n>0)
+        {
+            r=n%10;   
+            sum=(sum*10)+r;    
+            n=n/10;    
+        }
+        
+        System.out.println(sum); 
+    }
+}

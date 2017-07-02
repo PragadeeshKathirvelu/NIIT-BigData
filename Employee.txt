@@ -1,0 +1,44 @@
+1.Accept employee details and display who employee who has maximum salary and who is elder.
+
+package employee;
+
+import java.util.Scanner;
+
+public class Employee 
+{
+    public static void main(String[] args) 
+    {
+        String name;
+        int id;
+        int eid=0;
+        String n=null;
+        int age;
+        int sal;
+        int a=0;
+        int max=0;
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<10;i++)
+        {
+            System.out.println("\n enter employee details: ");
+            name=sc.next();
+            id=sc.nextInt();
+            age=sc.nextInt();
+            sal=sc.nextInt();
+            if(sal>max)
+            {
+                max=sal;
+                n=name;
+                eid=id;
+            }
+            if(age>a)
+            {
+                a=eid;
+                
+            }
+        }
+        System.out.println(n);
+        System.out.println(eid);
+        System.out.println(max);
+        System.out.println("\n elder is "+eid);
+    }
+}

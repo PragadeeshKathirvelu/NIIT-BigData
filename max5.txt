@@ -1,0 +1,24 @@
+1.greatest of five numbers
+
+import java.util.Scanner;
+public class Max5 
+{
+    public static void main(String a[])
+    {
+        int num,max=0,i=1;
+        Scanner sc=new Scanner(System.in);
+        while(i<=5)
+        {
+            System.out.println("\n enter number: ");
+            num=sc.nextInt();
+            {
+            if(num>max)
+            {
+            max=num;
+            }
+            i=i+1;
+        }
+        }
+    System.out.println("\n maximum is : "+max);
+}
+}

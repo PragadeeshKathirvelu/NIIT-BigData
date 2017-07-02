@@ -1,0 +1,35 @@
+1.display salary bonuses of employees
+
+package salarybonus;
+
+import java.util.Scanner;
+
+public class Salarybonus 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        long salary,bonus;
+        
+        for(int i=0;i<10;i++)
+        {
+            System.out.println("\n enter salary:");
+            salary=sc.nextLong();
+            if(salary>=10000)
+            {
+                bonus=(salary*30)/100;
+                System.out.println("\n bonus is"+bonus);
+            }
+            else if(salary>=50000)
+            {
+                bonus=(salary*20)/100;
+                System.out.println("\n bonus is"+bonus);
+            }
+            else if(salary>=100000)
+            {
+                bonus=(salary*10)/100;
+                System.out.println("\n bonus is"+bonus);
+            }
+        }
+    }
+}
