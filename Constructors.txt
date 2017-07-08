@@ -1,0 +1,132 @@
+1.write a program in java to create a base class name for accepting student details.after that create child classes of science streams (maths , bio, CSE).
+ create another child classes for CSC(software,hardware) and Biology(botany,zoology).
+import java.util.Scanner;
+
+
+import java.util.Scanner;
+
+
+class Maths extends Studentdetails
+{
+    public Maths()
+    {
+        System.out.println("\n enter name:");
+       name=sc.next();
+       System.out.println("\n enter ID:");
+       id=sc.nextInt();
+        System.out.println("\n enter maths marks:");
+        m=sc.nextInt();
+    }
+    void dispm()
+    {
+        System.out.println(name);
+        System.out.println(id);
+        System.out.println("maths mark is"+m);
+    }
+}
+class Bio extends Studentdetails
+{
+    public Bio()
+    {
+        System.out.println("\n enter botany and zoology");
+    }
+}
+class Bot extends Bio
+{
+    public Bot()
+    {
+        System.out.println("\n enter botany mark:");
+        b=sc.nextInt();
+    }
+    void dispbo()
+    {
+        
+        System.out.println("botany mark is"+b);
+    }
+}
+class Zoo extends Bio
+{
+    public Zoo()
+    {
+        System.out.println("\n enter zoology mark:");
+        z=sc.nextInt();
+    }
+    void dispzo()
+    {
+        
+        System.out.println("zoology mark is"+z);
+    }
+}
+class CSC extends Studentdetails
+{
+    public CSC()
+    {
+        System.out.println("\n enter software and hardware:");
+    }
+}
+class Software extends CSC
+{
+    public Software()
+    {
+        System.out.println("\n enter software marks:");
+        s=sc.nextInt();
+    }
+    void dispso()
+    {
+        
+        System.out.println("software mark is"+s);
+    }
+}
+class Hardware extends CSC
+{
+    public Hardware()
+    {
+        System.out.println("\n enter hardware marks:");
+        h=sc.nextInt();
+    }
+    void disphw()
+    {
+        
+        System.out.println("hardware mark is"+h);
+    }
+}
+public class Studentdetails 
+{
+    public String name;
+    public int id,m,b,z,s,h;
+    Scanner sc=new Scanner(System.in);
+    public Studentdetails()
+    {
+        this.name=name;
+        this.id=id;
+        this.m=m;
+        this.b=b;
+        this.z=z;
+        this.s=s;
+        this.h=h;
+    }
+    public static void main(String a[])
+    {
+        Studentdetails s=new Studentdetails();
+        Maths obj1=new Maths();
+        Bio obj2=new Bio();
+        Bot obj3=new Bot();
+        Zoo obj4=new Zoo();
+        Software obj5=new Software();
+        Hardware obj6=new Hardware();
+        obj1.dispm();
+        obj3.dispbo();
+        obj4.dispzo();
+        obj5.dispso();
+        obj6.disphw();
+    }
+}
+    
+    
+
+
+
+    
+    
+
+
