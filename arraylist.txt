@@ -1,0 +1,47 @@
+
+package pkg11_7_17;
+
+import java.util.ArrayList;
+
+public class ArraylistEx 
+{
+
+    public static void main(String[] args)
+    {
+        ArrayList<String> stud=new ArrayList();
+        
+        stud.add("ram");
+        stud.add("raj");
+        stud.add("abi");
+        stud.add("alex");
+        
+        for(String name : stud)
+        {
+            System.out.println(name);
+        }
+        
+        ArrayList<Integer> stud1=new ArrayList();
+        
+        stud1.add(23);
+        stud1.add(24);
+        stud1.add(25);
+        stud1.add(22);
+        
+        for(int age : stud1)
+        {
+            System.out.println(age);
+        }
+        
+        ArrayList<String> stud2=new ArrayList();
+        
+        stud2.add("chennai");
+        stud2.add("kerala");
+        stud2.add("andhra");
+        stud2.add("bangalore");
+        
+        for(String city : stud2)
+        {
+            System.out.println(city);
+        }
+    }
+}
