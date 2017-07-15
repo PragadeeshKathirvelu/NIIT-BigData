@@ -1,0 +1,23 @@
+
+import java.util.LinkedList;
+
+public class Linkedlist1 
+{
+    public static void main(String a[])
+    {
+        LinkedList s=new LinkedList();
+        s.add("raj");
+        s.add("rak");
+        s.add("rad");
+        s.add("raw");
+        s.add("smack");
+        
+        
+        System.out.println("element at second index :"+s.get(2));
+        
+        System.out.println("first element is :"+s.getFirst());
+        
+        System.out.println("element at last is :"+s.getLast());
+    }
+    
+}

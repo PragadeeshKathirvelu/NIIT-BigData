@@ -1,0 +1,76 @@
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class Employeearaylist {
+
+	public static void details()
+	{
+		Employee row1= new Employee("1001","Jim",27,33000);
+		Employee row2= new Employee("1002","Sim",28,37000);
+		Employee row3= new Employee("1003","Kim",25,34000);
+		Employee row4= new Employee("1004","Dim",31,41000);
+		Employee row5= new Employee("1005","Rim",29,32000);
+		
+		ArrayList<Employee> empdt=new ArrayList<Employee>();
+		empdt.add(row1);
+		empdt.add(row2);
+		empdt.add(row3);
+		empdt.add(row4);
+		empdt.add(row5);
+	
+	for(Employee eobj:empdt)
+	{
+		System.out.println("The Employee id is "+ eobj.empid);
+		System.out.println("The Employee name is "+ eobj.empname);
+		System.out.println("The Employee age is "+ eobj.empage);
+		System.out.println("The Employee salary is "+ eobj.empsalary);
+	}
+	Collections.sort(empdt, new Salarycompare());
+	for(Employee e1:empdt){
+		System.out.println(e1.empid+" "+e1.empname+" "+e1.empage+" "+e1.empsalary);
+	}
+	}
+	
+	public static void main(String[] aa)
+	{
+		details();
+	}
+}
+
+class Salarycompare implements Comparator
+{
+	public int compare(Object a, Object b)
+	{
+		Employee X= (Employee) a;
+		Employee Y= (Employee) b;
+
+		if((X.empsalary)<(Y.empsalary)){
+			return 1;
+		}
+		else if((X.empsalary)>(Y.empsalary)){
+			return -1;
+		}
+		else{
+			return 0;
+		}
+	}
+}
+
+class Employee
+{
+	String empid;
+	String empname;
+	int empage;
+	int empsalary;
+	
+public Employee(String id, String name, int age, int salary)
+{
+	this.empid=id;
+	this.empname=name;
+	this.empage=age;
+	this.empsalary=salary;
+}
+}
